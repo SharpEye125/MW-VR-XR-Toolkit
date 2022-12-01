@@ -13,6 +13,12 @@ public class LocomotionController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
         if (leftTeleportRay)
         {
             leftTeleportRay.gameObject.SetActive(CheckIfActivated(leftTeleportRay));
@@ -23,15 +29,9 @@ public class LocomotionController : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public bool CheckIfActivated(XRController controller)
     {
-        InputHelpers.IsPressed(controller.inputDevice, teleportActivationButton, out bool isActivated, activationThreshold);
+        InputHelpers.IsPressed(controller.inputDevice, teleportActivationButton, out bool isActivated, a ctivationThreshold);
         return isActivated;
     }
 }

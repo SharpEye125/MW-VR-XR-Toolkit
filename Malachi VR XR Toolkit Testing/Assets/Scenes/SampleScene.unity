@@ -6179,7 +6179,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftTeleportRay: {fileID: 1507334876}
   rightTeleportRay: {fileID: 903770489}
-  teleportActivationButton: 18
+  teleportActivationButton: 4
   activationThreshold: 0.1
 --- !u!114 &848068870
 MonoBehaviour:
@@ -6193,6 +6193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e709a617af827f48963556e64f92473, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 1
   inputSource: 4
 --- !u!1 &903770484
 GameObject:

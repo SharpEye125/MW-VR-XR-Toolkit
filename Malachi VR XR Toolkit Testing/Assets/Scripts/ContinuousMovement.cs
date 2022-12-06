@@ -46,7 +46,10 @@ public class ContinuousMovement : MonoBehaviour
         {
             fallingSpeed = 0;
         }
-        fallingSpeed += gravity * Time.fixedDeltaTime;
+        else
+        {
+            fallingSpeed += gravity * Time.fixedDeltaTime;
+        }
         character.Move(Vector3.up * fallingSpeed * Time.fixedDeltaTime);
     }
 

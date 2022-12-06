@@ -365,7 +365,7 @@ GameObject:
   - component: {fileID: 176005195}
   - component: {fileID: 176005194}
   - component: {fileID: 176005193}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -462,7 +462,7 @@ GameObject:
   - component: {fileID: 256754540}
   - component: {fileID: 256754539}
   - component: {fileID: 256754538}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -559,7 +559,7 @@ GameObject:
   - component: {fileID: 286186864}
   - component: {fileID: 286186863}
   - component: {fileID: 286186862}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5571,7 +5571,7 @@ GameObject:
   - component: {fileID: 484601427}
   - component: {fileID: 484601426}
   - component: {fileID: 484601425}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5843,7 +5843,7 @@ GameObject:
   - component: {fileID: 773075470}
   - component: {fileID: 773075469}
   - component: {fileID: 773075468}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6098,6 +6098,7 @@ GameObject:
   - component: {fileID: 848068867}
   - component: {fileID: 848068869}
   - component: {fileID: 848068870}
+  - component: {fileID: 848068871}
   m_Layer: 0
   m_Name: VR Rig
   m_TagString: Untagged
@@ -6195,6 +6196,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   inputSource: 4
+  gravity: -9.81
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  additionalHeight: 0.2
+--- !u!114 &848068871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848068864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc4f2c0214c9b494fa7eb5b8b2c02885, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_System: {fileID: 0}
+  m_TurnAmount: 45
+  m_DebounceTime: 0.2
+  m_EnableTurnLeftRight: 1
+  m_EnableTurnAround: 1
+  m_TurnUsage: 0
+  m_Controllers:
+  - {fileID: 843276635}
+  m_DeadZone: 0.75
 --- !u!1 &903770484
 GameObject:
   m_ObjectHideFlags: 0
@@ -6667,7 +6694,7 @@ GameObject:
   - component: {fileID: 1128989796}
   - component: {fileID: 1128989795}
   - component: {fileID: 1128989794}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6764,7 +6791,7 @@ GameObject:
   - component: {fileID: 1251830960}
   - component: {fileID: 1251830959}
   - component: {fileID: 1251830958}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7100,7 +7127,7 @@ GameObject:
   - component: {fileID: 1330204549}
   - component: {fileID: 1330204548}
   - component: {fileID: 1330204547}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12499,7 +12526,7 @@ GameObject:
   - component: {fileID: 1550542246}
   - component: {fileID: 1550542245}
   - component: {fileID: 1550542244}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Teleportation Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12678,7 +12705,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1800262534}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Geometry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12721,7 +12748,7 @@ GameObject:
   - component: {fileID: 1869376584}
   - component: {fileID: 1869376583}
   - component: {fileID: 1869376582}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12903,7 +12930,7 @@ GameObject:
   - component: {fileID: 2123527187}
   - component: {fileID: 2123527186}
   - component: {fileID: 2123527185}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13001,7 +13028,7 @@ GameObject:
   - component: {fileID: 2124776530}
   - component: {fileID: 2124776529}
   - component: {fileID: 2124776528}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Teleportation Anchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13185,7 +13212,7 @@ GameObject:
   - component: {fileID: 2139539051}
   - component: {fileID: 2139539050}
   - component: {fileID: 2139539049}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}

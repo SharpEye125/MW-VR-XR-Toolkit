@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class AnimateHand : MonoBehaviour
 {
     public InputActionProperty pinchAnimationAction;
-
+     
 
     // Start is called before the first frame update
     void Start()

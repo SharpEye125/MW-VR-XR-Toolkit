@@ -6787,7 +6787,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
-  additionalHeight: 0.2
+  additionalHeight: 0.05
 --- !u!143 &848068871
 CharacterController:
   m_ObjectHideFlags: 0
@@ -6825,7 +6825,7 @@ MonoBehaviour:
   m_EnableTurnAround: 1
   m_TurnUsage: 0
   m_Controllers:
-  - {fileID: 0}
+  - {fileID: 843276638}
   m_DeadZone: 0.75
 --- !u!114 &848068873
 MonoBehaviour:

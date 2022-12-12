@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.InputSystem;
 
 public class LocomotionController : MonoBehaviour
 {
@@ -9,6 +10,9 @@ public class LocomotionController : MonoBehaviour
     public XRController rightTeleportRay;
     public InputHelpers.Button teleportActivationButton;
     public float activationThreshold = 0.1f;
+
+    public InputActionProperty leftCancel;
+    public InputActionProperty rightCancel;
 
     // Start is called before the first frame update
     void Start()
@@ -21,11 +25,11 @@ public class LocomotionController : MonoBehaviour
     {
         if (leftTeleportRay)
         {
-            leftTeleportRay.gameObject.SetActive(CheckIfActivated(leftTeleportRay));
+            leftTeleportRay.gameObject.SetActive(leftCancel.action.ReadValue<float>() == 0 && CheckIfActivated(leftTeleportRay));
         }
         if (rightTeleportRay)
         {
-            rightTeleportRay.gameObject.SetActive(CheckIfActivated(rightTeleportRay));
+            rightTeleportRay.gameObject.SetActive(rightCancel.action.ReadValue<float>() == 0 && CheckIfActivated(rightTeleportRay));
         }
     }
 

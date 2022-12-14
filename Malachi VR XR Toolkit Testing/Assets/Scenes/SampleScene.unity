@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 9358393}
   - component: {fileID: 9358392}
   - component: {fileID: 9358391}
+  - component: {fileID: 9358397}
   m_Layer: 6
   m_Name: Sphere
   m_TagString: Untagged
@@ -353,6 +354,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9358397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9358390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 774fd9c925c19f94eaa78319f6576310, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useMinimumY: 1
+  minY: -10
 --- !u!1001 &25637490
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -585,6 +600,20 @@ MonoBehaviour:
   m_AttachPointCompatibilityMode: 0
   leftAttachTransform: {fileID: 0}
   rightAttachTransform: {fileID: 0}
+--- !u!114 &25637498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 25637491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 774fd9c925c19f94eaa78319f6576310, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useMinimumY: 1
+  minY: -10
 --- !u!1 &76397259
 GameObject:
   m_ObjectHideFlags: 0
@@ -1108,6 +1137,7 @@ GameObject:
   - component: {fileID: 168063277}
   - component: {fileID: 168063276}
   - component: {fileID: 168063275}
+  - component: {fileID: 168063281}
   m_Layer: 6
   m_Name: Cube Grab Interactable -Offset
   m_TagString: Untagged
@@ -1324,6 +1354,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &168063281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168063274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 774fd9c925c19f94eaa78319f6576310, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useMinimumY: 1
+  minY: -10
 --- !u!1 &176005191
 GameObject:
   m_ObjectHideFlags: 0
@@ -7775,7 +7819,7 @@ MonoBehaviour:
   teleportActivationButton: 6
   activationThreshold: 0.1
   leftCancel:
-    m_UseReference: 1
+    m_UseReference: 0
     m_Action:
       m_Name: Left Cancel
       m_Type: 0
@@ -7787,7 +7831,7 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 6558622148059887818, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   rightCancel:
-    m_UseReference: 1
+    m_UseReference: 0
     m_Action:
       m_Name: Right Cancel
       m_Type: 0
@@ -8272,7 +8316,7 @@ MonoBehaviour:
   m_ModelSelectTransition: 
   m_ModelDeSelectTransition: 
   m_ControllerNode: 5
-  m_SelectUsage: 3
+  m_SelectUsage: 2
   m_ActivateUsage: 2
   m_UIPressUsage: 2
   m_AxisToPressThreshold: 0.1
@@ -8562,6 +8606,7 @@ GameObject:
   - component: {fileID: 1235846182}
   - component: {fileID: 1235846181}
   - component: {fileID: 1235846180}
+  - component: {fileID: 1235846186}
   m_Layer: 6
   m_Name: Cube Simple Interactable
   m_TagString: Untagged
@@ -8777,6 +8822,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1235846186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235846179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 774fd9c925c19f94eaa78319f6576310, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useMinimumY: 1
+  minY: -10
 --- !u!1 &1251830956
 GameObject:
   m_ObjectHideFlags: 0
@@ -8973,6 +9032,7 @@ GameObject:
   - component: {fileID: 1267230424}
   - component: {fileID: 1267230423}
   - component: {fileID: 1267230422}
+  - component: {fileID: 1267230428}
   m_Layer: 6
   m_Name: Cube Grab Interactable -Instant
   m_TagString: Untagged
@@ -9189,6 +9249,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1267230428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267230421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 774fd9c925c19f94eaa78319f6576310, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useMinimumY: 1
+  minY: -10
 --- !u!1 &1274719621
 GameObject:
   m_ObjectHideFlags: 0
@@ -9203,6 +9277,7 @@ GameObject:
   - component: {fileID: 1274719624}
   - component: {fileID: 1274719623}
   - component: {fileID: 1274719622}
+  - component: {fileID: 1274719628}
   m_Layer: 6
   m_Name: Cube Grab Interactable -Kinematic
   m_TagString: Untagged
@@ -9419,6 +9494,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1274719628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1274719621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 774fd9c925c19f94eaa78319f6576310, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useMinimumY: 1
+  minY: -10
 --- !u!1 &1297725523
 GameObject:
   m_ObjectHideFlags: 0
@@ -9990,6 +10079,7 @@ GameObject:
   - component: {fileID: 1383836427}
   - component: {fileID: 1383836426}
   - component: {fileID: 1383836425}
+  - component: {fileID: 1383836431}
   m_Layer: 6
   m_Name: Cube Grab Interactable -Velocity Track
   m_TagString: Untagged
@@ -10206,6 +10296,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1383836431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383836424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 774fd9c925c19f94eaa78319f6576310, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useMinimumY: 1
+  minY: -10
 --- !u!1 &1391937865
 GameObject:
   m_ObjectHideFlags: 0
@@ -15415,7 +15519,7 @@ MonoBehaviour:
   m_ModelSelectTransition: 
   m_ModelDeSelectTransition: 
   m_ControllerNode: 4
-  m_SelectUsage: 3
+  m_SelectUsage: 2
   m_ActivateUsage: 2
   m_UIPressUsage: 2
   m_AxisToPressThreshold: 0.1

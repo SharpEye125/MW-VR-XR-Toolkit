@@ -24,9 +24,9 @@ public class SampleSimpleInteractableFunc : MonoBehaviour
     }
     private void OnTriggerStay(Collider other)
     {
-        if((gameObject).tag != "Left Hand" && (gameObject).GetComponent<XRSocketInteractor>() == false || (gameObject).tag != "Right Hand" && (gameObject).GetComponent<XRSocketInteractor>() == false)
+        if((other.gameObject).tag != "Left Hand" && (other.gameObject).GetComponent<XRSocketInteractor>() == false || (other.gameObject).tag != "Right Hand" && (other.gameObject).GetComponent<XRSocketInteractor>() == false)
         {
-            prefab = (gameObject);
+            prefab = (other.gameObject);
         }
         else
         {

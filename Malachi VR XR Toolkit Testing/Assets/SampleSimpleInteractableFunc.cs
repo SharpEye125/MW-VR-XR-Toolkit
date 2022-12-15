@@ -8,8 +8,8 @@ public class SampleSimpleInteractableFunc : MonoBehaviour
 {
     public GameObject prefab;
     public Transform spawnPoint;
-    public Collider itemSocket;
-    public bool useXRSockets = true;
+    //public Collider itemSocket;
+    //public bool useXRSockets = true;
     // Start is called before the first frame update
     void Start()
     {

@@ -8032,6 +8032,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 5461061190947004118, guid: ee22fb2d621432e45ab40a09c345f485, type: 3}
+  defaultPrefab: {fileID: 7947812680047643037}
   spawnPoint: {fileID: 760295890}
 --- !u!1 &657723038
 GameObject:
@@ -9816,6 +9817,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 5461061190947004118, guid: ee22fb2d621432e45ab40a09c345f485, type: 3}
+  defaultPrefab: {fileID: 0}
   spawnPoint: {fileID: 760295890}
 --- !u!1 &1246580816
 GameObject:
@@ -18131,3 +18133,8 @@ PrefabInstance:
       objectReference: {fileID: 640565202}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f099fc976e15b243bbc1b0754122ba3, type: 3}
+--- !u!1 &7947812680047643037 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7947812678786835481, guid: 3f099fc976e15b243bbc1b0754122ba3, type: 3}
+  m_PrefabInstance: {fileID: 7947812680047643036}
+  m_PrefabAsset: {fileID: 0}

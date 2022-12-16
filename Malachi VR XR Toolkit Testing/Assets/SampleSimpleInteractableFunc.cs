@@ -24,9 +24,10 @@ public class SampleSimpleInteractableFunc : MonoBehaviour
     }
     private void OnTriggerStay(Collider other)
     {
-        if((other.gameObject).tag != "Left Hand" && (other.gameObject).GetComponent<XRSocketInteractor>() == false || (other.gameObject).tag != "Right Hand" && (other.gameObject).GetComponent<XRSocketInteractor>() == false)
+        if((other.gameObject).tag == "Duplicatable" && (other.gameObject).GetComponent<XRSocketInteractor>() == false || (other.gameObject).tag == "Duplicatable" && (other.gameObject).GetComponent<XRSocketInteractor>() == false)
         {
-            prefab = (other.gameObject);
+            GameObject duplicated = prefab = (other.gameObject);
+            duplicated.gameObject.GetComponent<Rigidbody>().isKinematic = false;
         }
         else
         {

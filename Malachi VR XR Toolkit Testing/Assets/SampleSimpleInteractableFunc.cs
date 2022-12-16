@@ -26,8 +26,7 @@ public class SampleSimpleInteractableFunc : MonoBehaviour
     {
         if((other.gameObject).tag == "Duplicatable" && (other.gameObject).GetComponent<XRSocketInteractor>() == false || (other.gameObject).tag == "Duplicatable" && (other.gameObject).GetComponent<XRSocketInteractor>() == false)
         {
-            GameObject duplicated = prefab = (other.gameObject);
-            duplicated.gameObject.GetComponent<Rigidbody>().isKinematic = false;
+            prefab = (other.gameObject);
         }
         else
         {
@@ -37,6 +36,9 @@ public class SampleSimpleInteractableFunc : MonoBehaviour
 
     public void SpawnPrefab()
     {
-        Instantiate(prefab, spawnPoint.position, spawnPoint.rotation);
+        GameObject duplicated = Instantiate(prefab, spawnPoint.position, spawnPoint.rotation);
+        duplicated.gameObject.GetComponent<Rigidbody>().isKinematic = false;
+        duplicated.gameObject.GetComponent<Rigidbody>().useGravity = true;
+        Destroy(duplicated, 30);
     }
 }
